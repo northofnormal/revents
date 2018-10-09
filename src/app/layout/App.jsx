@@ -10,6 +10,7 @@ import PeopleDetailed from '../../features/user/UserDetailed/UserDetailed';
 import SettingsDashboard from '../../features/user/Settings/SettingsDashboard';
 import HomePage from '../../features/home/HomePage'
 import TestComponent from '../../features/testArea/TestComponent';
+import ModalManager from '../../features/Modals/ModalManager'
 
 class App extends Component {
   // Components are required to have a render() function
@@ -18,6 +19,7 @@ class App extends Component {
       // this is JSX, html-looking business that gets compiled into JS and then is injected into the html page 
       // have to wrap elements in a div for some reason? it's a .jsx thing 
       <div>
+        <ModalManager />
         <Switch>
           <Route exact path='/' component={HomePage} />
         </Switch>
